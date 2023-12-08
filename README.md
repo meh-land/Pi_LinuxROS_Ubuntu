@@ -20,19 +20,19 @@ This repository contains step-by-step instructions to set an Ubuntu Server 20.04
 
 ## Pi - on boot (MUST DO)
 1. Disable unattended updates completely. 
-  ```
-  sudo apt remove unattended-upgrades
-  ```
+   ```
+   sudo apt remove unattended-upgrades
+   ```
 2. Connect an Ethernet cable to the Pi to have access to the internet.
 3. Install nmcli to connect to wifi. 
-  ```
-  sudo apt install network-manager
-  ```
+   ```
+   sudo apt install network-manager
+   ```
 4. Run these commands to connect to ESP network.
-  ```
-  nmcli radio wifi
-  sudo nmcli dev wifi connect ourESP password ourESP123
-  ```
+   ```
+   nmcli radio wifi
+   sudo nmcli dev wifi connect ourESP password ourESP123
+   ```
 5. Update and upgrade all packages.
    ```
    sudo apt update && sudo apt upgrade -y
@@ -43,9 +43,9 @@ This repository contains step-by-step instructions to set an Ubuntu Server 20.04
 1. Since the Pi is connected on the ESP network, make sure your PC is also connected to it.
 2. Open cmd on Windows or terminal on Linux.
 3. Enter the following command:
-  ```
-  ssh pi@raspberrypi
-  ```
+   ```
+   ssh pi@raspberrypi
+   ```
 4. You will be prompted to enter the password.
 5. Voila!
 
